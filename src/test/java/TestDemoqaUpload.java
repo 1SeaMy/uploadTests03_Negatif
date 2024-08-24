@@ -31,8 +31,9 @@ public class TestDemoqaUpload {
         upLoadButton.sendKeys(uploadFile.getAbsolutePath());
 
         WebElement uploadMes=driver.findElement(By.id("uploadedFilePath"));
-        Assert.assertEquals(uploadMes.getText(),"C:\\fakepath\\111.jpg");
         System.out.println(uploadMes.getText());
+        Assert.assertEquals(uploadMes.getText(),"C:\\fakepath\\111.jpg");
+
         driver.close();
     }
 }
